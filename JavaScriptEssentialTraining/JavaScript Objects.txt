@@ -1,0 +1,42 @@
+JavaScript Objects
+
+const backpack = {}
+curly braces are used to create empty space to fill object.
+
+const backpack = {
+	name: 'everyday backpack',
+	volume: 30,
+	color: 'gray',
+};
+name, volume, and color are properties added to fill the backpack in the curly braces. Properties can be sub-nested with their own curly braces.
+
+const backpack = {
+	name: 'everyday backpack',
+	volume: 30,
+	color: 'gray',
+	strapLength: {
+	  left: 26,
+	  right: 26,
+	},
+	lidOpen: false.
+	toggleLid: function (lid status) {
+	  this.lidOpen = lidStatus
+	},
+};
+toggleLid is a method containing a function. It takes a value for lidStatus and instructs the object's lidOpen to be whatever the value is in lidStatus.
+
+"this" keyword refers to the current object.
+
+Constant is a "container" whose properties can be changed, however the object itself cannot be removed or replaced from the container
+
+backpack = 5
+this results in an error because backpack is a constant. Constant objects cannot be changed to five, they must remain a backpack.
+
+backpack.volume = 50
+this does not change the backpack, so it is allowed. Instead, it is changing one of the already defined properties of the backpack. Calling just volume does not work because it needs to be known which object the property belongs to.
+
+console.log(backpack)
+automatically loads the object to the browser's console
+
+console.log("The backpack object:", backpack)
+automatically loads the object, but also includes a comment as what it is without having to inspect. This can also be used to display the properties by using backpack.color, etc. Can also use bracket notation, but dot notation generally preferred. 

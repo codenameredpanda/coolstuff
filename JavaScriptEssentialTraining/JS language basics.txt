@@ -1,0 +1,28 @@
+JS language basics
+
+// single line comment
+
+/* multiline comment
+this makes a multiline comment */
+
+/** (return)
+this creates a verbose comment which captures function. recognizes code, ie @param {*} update. Can put {string} to comment the parameter is a string update. Also creates an additional line for further comment. Final comment results look like:
+
+/**                         -- (start)
+* function updateBackpack() -- (user input)
+* Outputs HTML              -- (user input)
+* @param {string} update    -- (auto detect and user input)
+*/                          -- (end)
+
+crtl + /  -- automatically comments the line cursor is on. If line is commented out, shortkey will instead uncomment line. Can do multiple lines by highlighting multiple lines.
+
+Can change tab size by selecting tab size on bottom bar and selecting desired spacing.
+
+<script>
+JS code goes here. Must be between script tags. This is old fashioned way.
+<script>
+
+From now on, JS code should always be in the head using async or defer.
+
+JS modules can be created to shorten code. Create something like a function, import in code. Need to add both files to HTML browser. These are automatically deferred. However, doing this way, cannot adjust function in browser console, only the code that references the function.
+
